@@ -9,6 +9,11 @@
     "start": "node bk/index.js",
     "build": "npm install && npm install --prefix sihproject && npm run build --prefix sihproject"
   },
+  
+  "engines": {
+    "node": "18.18.2",
+    "vite": "5.3.2"
+  },
   "author": "utkarsh gual",
   "license": "ISC",
   "dependencies": {

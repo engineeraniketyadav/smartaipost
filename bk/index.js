@@ -27,7 +27,7 @@ app.use("/api/office",officeRoutes);
 app.use("/api/parcel",parcelRoutes);
 app.use("/api/location",locationRoutes);
 
-
+app.use(express.static(path.join(__dirname,'/sihproject/dist')))
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'sihproject', 'dist', 'index.html'));
